@@ -1,0 +1,101 @@
+.article {
+    @include breakpoint-up(large) {
+        margin-top: 6.25rem;
+    }
+    &__header {
+        @include breakpoint-up(large) {
+            width: 100%;
+            button {
+                display: block !important;
+            }
+        }
+        margin: 0px auto;
+        width:20.9375rem;
+        button {
+            display: none;
+        }
+        h2 {
+            margin: 0px auto;
+        }
+    }
+    &__grid {
+        @include breakpoint-up(large) {
+            width: 71%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            button {
+                display: none;
+            }
+        }
+        margin: 0px auto;
+        width: 20.9375rem;
+    }
+    &__image {
+        display: flex;
+        align-items: flex-end;
+        color: white;
+        margin: 1.25rem auto;
+        height: 8.75rem;
+        width: 20.9375rem;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        @include breakpoint-up(large) {
+            width: 13.75rem;
+            height: 25rem;
+        }
+        h2 {
+            @include breakpoint-up(large) {
+                font-size: 1.875rem;
+                width: 70%;
+                margin-left: 1.25rem;
+                margin-bottom: 1.25rem;
+            }
+            width: 50%;
+            margin-left: 0.625rem;
+        }
+        &:nth-of-type(1) {
+            @include breakpoint-up(large) {
+                background-image: url('../../images/desktop/image-deep-earth.jpg') !important;
+            }
+        }
+        &:nth-of-type(2) {
+            @include breakpoint-up(large) {
+                background-image: url('../../images/desktop/image-night-arcade.jpg') !important;
+            }
+        }
+        &:nth-of-type(3) {
+            @include breakpoint-up(large) {
+                background-image: url('../../images/desktop/image-soccer-team.jpg') !important;
+            }
+        }
+        &:nth-of-type(4) {
+            @include breakpoint-up(large) {
+                background-image: url('../../images/desktop/image-grid.jpg') !important;
+                h2 {
+                    width: 50%;
+                }
+            }
+        }
+        &:nth-of-type(5) {
+            @include breakpoint-up(large) {
+                background-image: url('../../images/desktop/image-from-above.jpg') !important;
+            }
+        }
+        &:nth-of-type(6) {
+            @include breakpoint-up(large) {
+                background-image: url('../../images/desktop/image-pocket-borealis.jpg') !important;
+            }
+        }
+        &:nth-of-type(7) {
+            @include breakpoint-up(large) {
+                background-image: url('../../images/desktop/image-curiosity.jpg') !important;
+            }
+        }
+        &:nth-of-type(8) {
+            @include breakpoint-up(large) {
+                background-image: url('../../images/desktop/image-fisheye.jpg') !important;
+            }
+        }
+    }
+}

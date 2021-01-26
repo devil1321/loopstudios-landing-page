@@ -1,0 +1,53 @@
+.feature {
+    @include breakpoint-up(large) {
+        display: flex;
+        justify-content: center;
+        margin-left: 12.5rem;
+    }
+    &__image {
+        @include breakpoint-up(large) {
+            width: 45.1875rem;
+            height: 25rem;
+            background-image: url('../../images/desktop/image-interactive.jpg') !important;
+        }
+        margin: 6.25rem auto 3.125rem;
+        width: 20.9375rem;
+        height: 13.125rem;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &__text {
+        @include breakpoint-up(large) {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+            top: 14.375rem;
+            right: 6.25rem;
+            width: 51.25rem;
+            height: 25rem;
+            text-align: left;
+            background-color: white;
+        }
+        text-align: center;
+        margin: 0px auto;
+        width: 20.9375rem;
+        height: 13.3125rem;
+        p {
+            @include breakpoint-up(large) {
+                width: 70%;
+            }
+            width: 19.375rem;
+            margin: 0px auto;
+        }
+        h2 {
+            @include breakpoint-up(large) {
+                width: 70%;
+            }
+        }
+    }
+}

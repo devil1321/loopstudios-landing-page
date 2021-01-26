@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+.d-flex {
+    display: flex;
+}
+
+.f-c {
+    flex-direction: column;
+}
+
+.j-c-sa {
+    justify-content: space-around;
+}
+
+.j-c-c {
+    justify-content: center;
+}
+
+.j-c-sb {
+    justify-content: space-between;
+}
+
+.a-i-sa {
+    align-items: space-around;
+}
+
+.a-i-c {
+    align-items: center;
+}
+
+.a-i-sb {
+    align-items: space-between;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: $josefinSans;
+    font-size: $fontSize;
+    width: 100%;
+}
+
+h2 {
+    @include breakpoint-up(large) {
+        font-size: 2.5rem;
+    }
+    font-size: 1.875rem;
+    font-weight: $js-weight;
+    text-transform: uppercase;
+    margin-bottom: 0.625rem;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    letter-spacing: 3px;
+    margin: 25px auto;
+    width: 12.5rem;
+    height: 2.5rem;
+    outline: none;
+    border: 1px solid $veryDarkGrey;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: $white;
+    transition: all 1s ease;
+    &:hover {
+        background-color: $black;
+        color: $white;
+    }
+}

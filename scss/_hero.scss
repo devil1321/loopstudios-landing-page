@@ -1,0 +1,27 @@
+.hero {
+    &__content {
+        @include breakpoint-up(large) {
+            background-image: url('../../images/desktop/image-hero.jpg') !important;
+        }
+        height: 100vh;
+        background-size: cover;
+    }
+    &__text {
+        text-transform: uppercase;
+        @include breakpoint-up(large) {
+            display: flex;
+            align-items: center;
+            width: 40.625rem;
+            height: 17.625rem;
+            margin-top: 6.25rem;
+            margin-left: 10.3125rem;
+            font-size: 5rem;
+        }
+        margin: 0px auto;
+        width: 70%;
+        padding: 1.875rem;
+        font-size: 2.5rem;
+        color: $white;
+        border: 2px solid $white;
+    }
+}
