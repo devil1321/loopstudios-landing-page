@@ -12,11 +12,11 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 100vh;
+    height: 100px;
     width: 100%;
     background-color: transparent;
     color: $white;
-    transition: all 200ms ease-in-out;
+    transition: width 200ms ease-in-out;
     &__header {
         @include breakpoint-up(large) {
             height: 100%;
@@ -60,7 +60,7 @@
         @include breakpoint-up(large) {
             width: 30rem;
         }
-        overflow-x: hidden;
+        overflow-x  : hidden;
         transition: all 1s ease;
         height: 100%;
         width: 0%;
@@ -72,7 +72,7 @@
             flex-direction: row;
             justify-content: space-around;
             height: 30%;
-        }
+        }   
         transition: all 1s ease;
         padding:1.5625rem;
         height: 27.75rem;

@@ -10,8 +10,11 @@
             height: 25rem;
             background-image: url('../../images/desktop/image-interactive.jpg') !important;
         }
+        @include breakpoint-up(medium) {
+            height:23rem;   
+        }
         margin: 6.25rem auto 3.125rem;
-        width: 20.9375rem;
+        width:95%;
         height: 13.125rem;
         background-size: cover;
         background-position: center center;
@@ -35,13 +38,13 @@
         }
         text-align: center;
         margin: 0px auto;
-        width: 20.9375rem;
+        width: 95%;
         height: 13.3125rem;
         p {
             @include breakpoint-up(large) {
                 width: 70%;
             }
-            width: 19.375rem;
+            width: 100%  ;
             margin: 0px auto;
         }
         h2 {

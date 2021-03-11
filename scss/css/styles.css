@@ -57,6 +57,7 @@ body {
   font-family: "Josefin Sans";
   font-size: 0.9375rem;
   width: 100%;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -101,12 +102,12 @@ button:hover {
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 100vh;
+  height: 100px;
   width: 100%;
   background-color: transparent;
   color: white;
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: width 200ms ease-in-out;
+  transition: width 200ms ease-in-out;
 }
 
 @media (min-width: 65em) {
@@ -317,7 +318,7 @@ button:hover {
 
 .feature__image {
   margin: 6.25rem auto 3.125rem;
-  width: 20.9375rem;
+  width: 95%;
   height: 13.125rem;
   background-size: cover;
   background-position: center center;
@@ -332,10 +333,16 @@ button:hover {
   }
 }
 
+@media (min-width: 34em) {
+  .feature__image {
+    height: 23rem;
+  }
+}
+
 .feature__text {
   text-align: center;
   margin: 0px auto;
-  width: 20.9375rem;
+  width: 95%;
   height: 13.3125rem;
 }
 
@@ -368,7 +375,7 @@ button:hover {
 }
 
 .feature__text p {
-  width: 19.375rem;
+  width: 100%;
   margin: 0px auto;
 }
 
@@ -414,7 +421,7 @@ button:hover {
 
 .article__grid {
   margin: 0px auto;
-  width: 20.9375rem;
+  width: 100%;
 }
 
 @media (min-width: 65em) {
@@ -442,7 +449,7 @@ button:hover {
   color: white;
   margin: 1.25rem auto;
   height: 8.75rem;
-  width: 20.9375rem;
+  width: 95%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
